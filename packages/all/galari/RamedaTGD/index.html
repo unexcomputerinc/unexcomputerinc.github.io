@@ -10,7 +10,7 @@
 		<p>
 			<span style="font-family:arial,helvetica,sans-serif;"><p id=install></p></span></p>
 		
-		<button id="installbtn">Get</button>
+		<button class="button" id="installbtn">Get</button>
 	</body>
 </html>
 <script>
@@ -20,22 +20,8 @@ if (navigator.appVersion.indexOf("Win")!=-1) message="This app is not supported 
 if (navigator.appVersion.indexOf("Mac")!=-1) message="This app is not supported on this platform";
 if (navigator.appVersion.indexOf("X11")!=-1) message="This app is not supported on this platform";
 if (navigator.appVersion.indexOf("Linux")!=-1) message="Available for your device!";
-if (navigator.appVersion.indexOf("")!=-1) message="Available for your device!";
-if (navigator.appVersion.indexOf("undefined")!=-1) message="Available for your device!";
 	
 document.getElementById("install").innerHTML = message; 
-	
-if(navigator.appVersion.indexOf("")!=-1) {
-  document.getElementById("installbtn").style.display = "";
-} else {
-  document.getElementById("installbtn").style.display = "none";
-}
-
-if(navigator.appVersion.indexOf("undefined")!=-1) {
-  document.getElementById("installbtn").style.display = "";
-} else {
-  document.getElementById("installbtn").style.display = "none";
-}
 	
 if(navigator.appVersion.indexOf("Linux")!=-1) {
   document.getElementById("installbtn").style.display = "";
@@ -46,15 +32,18 @@ if(navigator.appVersion.indexOf("Linux")!=-1) {
 </script>
 <style>
 	
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  width: 100%;
+}
+	
 p {
     font-size: 75px;
 }
 	
 h1 {
-    font-size: 75px;
-}
-
-button {
     font-size: 75px;
 }
 	
