@@ -1,9 +1,9 @@
 <script>
 navigator.permissions.query({name:'geolocation'}).then(function(result) {
   if (result.state === 'granted') {
-    showMap();
+    showLocalNewsWithGeolocation();
   } else if (result.state === 'prompt') {
-    showButtonToEnableMap();
+    showButtonToEnableLocalNews();
   }
   // Don't do anything if the permission was denied.
 });
