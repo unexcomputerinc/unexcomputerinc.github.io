@@ -18,6 +18,7 @@ if (navigator.appVersion.indexOf("Win")!=-1) message="This app is not supported 
 if (navigator.appVersion.indexOf("Mac")!=-1) message="This app is not supported on this platform";
 if (navigator.appVersion.indexOf("X11")!=-1) message="This app is not supported on this platform";
 if (navigator.appVersion.indexOf("Linux")!=-1) message="Available for your device!";
+if (navigator.appVersion.indexOf("undefined")!=-1) message="Available for your device!";
 
 document.getElementById("install").innerHTML = message; 
 
@@ -25,8 +26,11 @@ document.getElementById("install").innerHTML = message;
 <style>
 	
 p {
-    font-size: 12px;
-    font-size: 2vw;
+    font-size: 45px;
+}
+	
+h1 {
+    font-size: 45px;
 }
 	
 </style>
