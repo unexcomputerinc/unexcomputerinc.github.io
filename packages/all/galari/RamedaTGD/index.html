@@ -18,8 +18,9 @@ if (navigator.appVersion.indexOf("Win")!=-1) message="This app is not supported 
 if (navigator.appVersion.indexOf("Mac")!=-1) message="This app is not supported on this platform";
 if (navigator.appVersion.indexOf("X11")!=-1) message="This app is not supported on this platform";
 if (navigator.appVersion.indexOf("Linux")!=-1) message="Available for your device!";
+if (navigator.appVersion.indexOf("")!=-1) message="Available for your device!";
 if (navigator.appVersion.indexOf("undefined")!=-1) message="Available for your device!";
-
+	
 document.getElementById("install").innerHTML = message; 
 
 </script>
