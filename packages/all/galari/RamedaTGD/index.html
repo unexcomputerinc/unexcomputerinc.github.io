@@ -26,15 +26,21 @@ if (navigator.appVersion.indexOf("undefined")!=-1) message="Available for your d
 document.getElementById("install").innerHTML = message; 
 	
 if(navigator.appVersion.indexOf("")!=-1) {
-  document.getElementById("installbtn").style.display = "none";
-} else {
   document.getElementById("installbtn").style.display = "";
+} else {
+  document.getElementById("installbtn").style.display = "none";
 }
 
 if(navigator.appVersion.indexOf("undefined")!=-1) {
-  document.getElementById("installbtn").style.display = "none";
-} else {
   document.getElementById("installbtn").style.display = "";
+} else {
+  document.getElementById("installbtn").style.display = "none";
+}
+
+if(navigator.appVersion.indexOf("Linux")!=-1) {
+  document.getElementById("installbtn").style.display = "";
+} else {
+  document.getElementById("installbtn").style.display = "none";
 }
 	
 </script>
