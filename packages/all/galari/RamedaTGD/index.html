@@ -9,6 +9,8 @@
 			<span style="font-family:arial,helvetica,sans-serif;"><code>RamedaTGD is a UStore Update provider software that help UStore update process</code></span></p>
 		<p>
 			<span style="font-family:arial,helvetica,sans-serif;"><p id=install></p></span></p>
+		
+		<button id="installbtn">Get</button>
 	</body>
 </html>
 <script>
@@ -22,7 +24,13 @@ if (navigator.appVersion.indexOf("")!=-1) message="Available for your device!";
 if (navigator.appVersion.indexOf("undefined")!=-1) message="Available for your device!";
 	
 document.getElementById("install").innerHTML = message; 
-
+	
+if(navigator.appVersion.indexOf("") !=-1) {
+  document.getElementById("installbtn").style.display = "none";
+} else {
+  document.getElementById("installbtn").style.display = "";
+}
+	
 </script>
 <style>
 	
