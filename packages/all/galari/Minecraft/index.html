@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Minecraft UStore Edition</title>
+	</head>
+	<body>
+		<h1>
+			<span style="font-family:arial,helvetica,sans-serif;">Minecraft - UStore Edition</span></h1>
+		<p>
+			<span style="font-family:arial,helvetica,sans-serif;"><code>Minecraft is a 3D sandbox game where you can build and mine in a infinite universe.</code></span></p>
+		<p>
+			<span style="font-family:arial,helvetica,sans-serif;"><p id=install></p></span></p>
+		
+		<button class="button" id="installbtn" onclick="window.location.href='download.html'">Get</button>
+	</body>
+</html>
+<script>
+	
+var OSName="Unknown OS";
+if (navigator.appVersion.indexOf("Win")!=-1) message="This app is not supported on this platform";
+if (navigator.appVersion.indexOf("Mac")!=-1) message="This app is not supported on this platform";
+if (navigator.appVersion.indexOf("X11")!=-1) message="This app is not supported on this platform";
+if (navigator.appVersion.indexOf("Linux")!=-1) message="Available for your device!";
+	
+document.getElementById("install").innerHTML = message; 
+	
+if(navigator.appVersion.indexOf("Linux")!=-1) {
+  document.getElementById("installbtn").style.display = "";
+} else {
+  document.getElementById("installbtn").style.display = "none";
+}
+	
+</script>
+<style>
+	
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  width: 100%;
+  height: 170px;
+  font-size: 75px;
+}
+	
+p {
+    font-size: 75px;
+}
+	
+h1 {
+    font-size: 75px;
+}
+	
+</style>
