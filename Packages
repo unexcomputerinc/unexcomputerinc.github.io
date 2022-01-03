@@ -1,0 +1,13 @@
+Package: com.unexcomputerinc.iphonepak
+Version: 1.0
+Section: Tweaks
+Maintainer: Xavier Bissonnette
+Depends: firmware (<7.0)
+Architecture: iphoneos-arm
+Filename: ./com.unexcomputerinc.iphonepak.deb
+Size: 854
+MD5sum: 85a01c41aaaa72b48b08d9d0a67f3016
+Description: This is a package that enable Unex computer Inc Related apps to work on iOS.
+Name: UX iPhone Patcher
+Author: Xavierbiss
+Depiction: https://10.0.0.3
